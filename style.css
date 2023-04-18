@@ -1,0 +1,106 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+  --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --clr-gray:hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--clr-gray);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  font-family: 'Lexend', sans-serif;
+  position: absolute;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--clr-gray);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: .25em 0;
+}
+
+.container {
+  width: 90%;
+  margin: 5em auto;
+  position: relative;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card__one {
+  background-color: var(--clr-bright-orange);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card__two {
+  background-color: var(--clr-dark-cyan);
+}
+
+.card__three {
+  background-color: var(--clr-very-dark-cyan);
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+}
+
+.text {
+  color: var(--clr-transparent-white);
+}
+
+.car__img {
+  padding: 2em 0;
+}
+
+.btn {
+  background-color: var(--clr-gray);
+  font-size: 1rem;
+  padding: .75em 1.2em;
+  margin: 2em 0;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.card__one :last-child {
+  color: var(--clr-bright-orange);
+}
+
+.card__two :last-child {
+  color: var(--clr-dark-cyan);
+}
+
+.card__three :last-child {
+  color: var(--clr-very-dark-cyan);
+}
+
+
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+  color: var(--clr-gray);
+  border: 1px solid var(--clr-gray);
+}
+
